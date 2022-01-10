@@ -1,5 +1,6 @@
 import { BrowserRouter } from "react-router-dom";
 import "./App.css";
+import MainComponent from "./components/mainCard/mainComponent";
 import NavbarTop from "./components/navbar/navbar";
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
       <BrowserRouter>
         <NavbarTop />
       </BrowserRouter>
+      <MainComponent />
     </>
   );
 }

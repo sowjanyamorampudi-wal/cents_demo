@@ -1,0 +1,13 @@
+.icon {
+    width: 30px;
+    height: 50px;
+    color: white;
+}
+
+.side_bar_container {
+    background-color: blue;
+    width: 100px;
+    color: white;
+    height: 100vh;
+    text-align: center;
+}

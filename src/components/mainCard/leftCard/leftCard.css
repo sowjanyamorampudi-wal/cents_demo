@@ -1,0 +1,32 @@
+.direction {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.left_card {
+    width: 680px;
+    background-color: white;
+    box-shadow: 5px 5px grey;
+    margin: 10px;
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 10px;
+    height: 500px;
+    overflow-x: scroll;
+}
+
+.active_button {
+    background-color: blue;
+    padding: 10px;
+    align-items: center;
+    color: white;
+    border: 0px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.complete_button {
+    border: 0px;
+    border-radius: 0px 10px 10px 0px;
+    padding: 10px;
+}
