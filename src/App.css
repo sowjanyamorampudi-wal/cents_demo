@@ -10,7 +10,7 @@
 }
 
 .over_flow {
-    overflow-y: hidden;
+    overflow-y: scroll;
     overflow-x: hidden;
     height: 100vh;
 }
