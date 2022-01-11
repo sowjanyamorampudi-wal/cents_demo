@@ -9,15 +9,21 @@ const MiddleCard = () => {
           </div>
           <div className="direction">
             <h1>5</h1>
-            <p>Total orders this month</p>
+            <p>
+              Total orders this <br /> month
+            </p>
           </div>
           <div className="direction">
             <h1>$51</h1>
-            <p>Total order value this month</p>
+            <p>
+              Total order <br /> value this month
+            </p>
           </div>
           <div className="direction">
             <h1>$10</h1>
-            <p>Average order value this month</p>
+            <p>
+              Average order <br /> value this month
+            </p>
           </div>
         </div>
       </div>

@@ -1,54 +1,57 @@
 import { Link } from "react-router-dom";
+import { FiSettings } from "react-icons/fi";
+import { CgProfile } from "react-icons/cg";
+import { AiOutlineDoubleRight } from "react-icons/ai";
+import { CgDisplayGrid } from "react-icons/cg";
+import { HiOutlineLocationMarker } from "react-icons/hi";
 import "./navbar.css";
 const NavbarTop = () => {
   return (
     <div className="card">
       <nav className="Nav_container">
-        <div className="admin_container">
-          <div className="admin_container">
-            <img
-              src="https://cdn-icons.flaticon.com/png/512/2811/premium/2811790.png?token=exp=1641802245~hmac=a0e96a0f2b89162be2844eb814cc98b7"
-              alt="icon"
-              className="icon"
-            />
+        <div className="direction">
+          <div>
             <Link to="/admin">
-              <p>Admin</p>
+              <p style={{ marginRight: "10px" }} className="admin_container">
+                <FiSettings className="nav_icon" />
+                Admin
+              </p>
             </Link>
           </div>
 
-          <div className="admin_container">
-            <img
-              src="https://cdn-icons.flaticon.com/png/512/2811/premium/2811790.png?token=exp=1641802245~hmac=a0e96a0f2b89162be2844eb814cc98b7"
-              alt="icon"
-              className="icon"
-            />
+          <div className="direction">
             <Link to="/laundromats">
-              <p>Laundromats</p>
+              <p className="laundromats_container">
+                <CgDisplayGrid className="nav_icon" />
+                Laundromats
+              </p>
             </Link>
           </div>
         </div>
 
-        <div className="admin_container">
-          <img
-            src="https://cdn-icons.flaticon.com/png/512/2811/premium/2811790.png?token=exp=1641802245~hmac=a0e96a0f2b89162be2844eb814cc98b7"
-            alt="icon"
-            className="icon"
-          />
+        <div>
           <Link to="/alllocations">
-            <p>All locations</p>
+            <p className="location_container" style={{ color: "black" }}>
+              <HiOutlineLocationMarker className="nav_icon" /> All locations
+              <AiOutlineDoubleRight className="location_icon" />
+            </p>
           </Link>
         </div>
         <div className="right_container">
-          <img
-            src="https://cdn-icons.flaticon.com/png/512/2811/premium/2811790.png?token=exp=1641802245~hmac=a0e96a0f2b89162be2844eb814cc98b7"
-            alt="icon"
-            className="icon"
-          />
-          <a href="">Give your two cents</a>
-          <img
-            src="https://cdn-icons.flaticon.com/png/512/2811/premium/2811790.png?token=exp=1641802245~hmac=a0e96a0f2b89162be2844eb814cc98b7"
-            alt="icon"
-            className="icon"
+          <h1>C</h1>
+
+          <a style={{ color: "#3790f4", marginLeft: "0px" }} href="#">
+            Give your two cents
+          </a>
+
+          <CgProfile
+            style={{
+              marginLeft: "20px",
+              color: "#3790f4",
+              width: "50px",
+              height: "30px",
+            }}
+            // className="nav_icon"
           />
         </div>
       </nav>

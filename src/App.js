@@ -5,12 +5,13 @@ import NavbarTop from "./components/navbar/navbar";
 
 function App() {
   return (
-    <>
+    <div>
       <BrowserRouter>
         <NavbarTop />
       </BrowserRouter>
+
       <MainComponent />
-    </>
+    </div>
   );
 }
 

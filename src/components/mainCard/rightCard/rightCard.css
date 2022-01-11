@@ -1,32 +1,36 @@
-.direction {
+.right_card_direction {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+}
+
+.right_card_direction p {
+    margin: 0;
+}
+
+.right_card_direction h5 {
+    margin: 0;
 }
 
 .right_card {
     width: 680px;
     background-color: white;
-    box-shadow: 5px 5px grey;
+    box-shadow: 2px 2px #888888;
     margin: 10px;
-    border: 1px solid;
+    border: 1px solid lightgrey;
     border-radius: 10px;
     padding: 10px;
     height: 500px;
-    overflow-x: scroll;
 }
 
-.active_button {
-    background-color: blue;
-    padding: 10px;
+.right_card_scroll_bar {
+    height: 70%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.list_items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
-    color: white;
-    border: 0px;
-    border-radius: 10px 0px 0px 10px;
-}
-
-.complete_button {
-    border: 0px;
-    border-radius: 0px 10px 10px 0px;
-    padding: 10px;
 }

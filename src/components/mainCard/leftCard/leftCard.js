@@ -1,63 +1,69 @@
+import RightCard from "../rightCard/rightCard";
 import "./leftCard.css";
 const LeftCard = () => {
   return (
     <>
       <div className="left_card">
-        <p>Showing orders in all locations</p>
-        <hr />
         <div>
-          <button className="active_button">Active</button>
-          <button className="complete_button">Complete</button>
-        </div>
-        <hr />
-        <div className="direction">
+          <p>Showing orders in all locations</p>
+          <hr />
           <div>
-            <h5>WF-1854</h5>
-            {/* <p>$17.33</p> */}
+            <button className="active_button">Active</button>
+            <button className="complete_button">Complete</button>
           </div>
-          <p>Apoorva Marathe</p>
-          <div>
+          <hr />
+        </div>
+        <div className="left_card_scroll_bar">
+          <div className="left_card_direction">
+            <h5>WF-1854 1111</h5>
+
+            <p>Apoorva Marathe</p>
+
             <h5>EST Test 2241 southern</h5>
-            {/* <p>01/04/2022 02:14 pm</p> */}
           </div>
-        </div>
-        <hr />
-        <div className="direction">
-          <div>
-            <h5>WF-1854</h5>
-            {/* <p>$17.33</p> */}
-          </div>
-          <p>Apoorva Marathe</p>
-          <div>
+          <hr />
+          <div className="left_card_direction">
+            <h5>WF-1854 1111</h5>
+
+            <p>Apoorva Marathe</p>
+
             <h5>EST Test 2241 southern</h5>
-            {/* <p>01/04/2022 02:14 pm</p> */}
           </div>
-        </div>
-        <hr />
-        <div className="direction">
-          <div>
-            <h5>WF-1854</h5>
-            {/* <p>$17.33</p> */}
-          </div>
-          <p>Apoorva Marathe</p>
-          <div>
+          <hr />
+          <div className="left_card_direction">
+            <h5>WF-1854 1111</h5>
+
+            <p>Apoorva Marathe</p>
+
             <h5>EST Test 2241 southern</h5>
-            {/* <p>01/04/2022 02:14 pm</p> */}
           </div>
-        </div>
-        <hr />
-        <div className="direction">
-          <div>
-            <h5>WF-1854</h5>
-            {/* <p>$17.33</p> */}
-          </div>
-          <p>Apoorva Marathe</p>
-          <div>
+          <hr />
+          <div className="left_card_direction">
+            <h5>WF-1854 1111</h5>
+
+            <p>Apoorva Marathe</p>
+
             <h5>EST Test 2241 southern</h5>
-            {/* <p>01/04/2022 02:14 pm</p> */}
           </div>
+          <hr />
+          <div className="left_card_direction">
+            <h5>WF-1854 1111</h5>
+
+            <p>Apoorva Marathe</p>
+
+            <h5>EST Test 2241 southern</h5>
+          </div>
+          <hr />
+          <div className="left_card_direction">
+            <h5>WF-1854 1111</h5>
+
+            <p>Apoorva Marathe</p>
+
+            <h5>EST Test 2241 southern</h5>
+          </div>
+
+          <hr />
         </div>
-        <hr />
       </div>
     </>
   );
