@@ -12,7 +12,11 @@ const MainComponent = () => {
         <BrowserRouter>
           <Sidebar />
           <Routes>
-            <Route exact path="/" element={<MainComponentTwo />} />
+            <Route
+              exact
+              path="/dashboard/orders"
+              element={<MainComponentTwo />}
+            />
             <Route path="/dashboard/customers" element={<Customers />} />
             <Route path="/dashboard/machine" element={<Machine />} />
             <Route path="/dashboard/reports" element={<Reports />} />

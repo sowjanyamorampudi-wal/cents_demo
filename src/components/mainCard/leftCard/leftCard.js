@@ -1,11 +1,14 @@
-import RightCard from "../rightCard/rightCard";
+import { FiDownload } from "react-icons/fi";
 import "./leftCard.css";
 const LeftCard = () => {
   return (
     <>
       <div className="left_card">
         <div>
-          <p>Showing orders in all locations</p>
+          <div className="left_card_direction">
+            <p>Showing orders in all locations</p>
+            <FiDownload className="left_card_icon" />
+          </div>
           <hr />
           <div>
             <button className="active_button">Active</button>

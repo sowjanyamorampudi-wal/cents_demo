@@ -2,8 +2,6 @@
     display: flex;
     height: 100vh;
     flex-direction: row;
-    left: 0;
-    margin: 0px;
 }
 
 .left_container {
@@ -12,7 +10,7 @@
 }
 
 .over_flow {
-    overflow-y: scroll;
+    overflow-y: hidden;
     overflow-x: hidden;
     height: 100vh;
 }
