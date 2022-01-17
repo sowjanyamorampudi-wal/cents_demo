@@ -36,7 +36,7 @@ const NavbarTop = () => {
       <div className="right_container">
         <h1>C</h1>
 
-        <a className="link" href="#">
+        <a className="link" href="#a">
           Give your two cents
         </a>
 
