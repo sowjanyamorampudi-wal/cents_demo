@@ -1,4 +1,4 @@
-.middle_card {
+/* .middle_card {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -15,14 +15,15 @@
     flex-direction: row;
     align-items: center;
     height: 100px;
-}
+} */
 
-h1 {
+
+/* h1 {
     color: #3790f4;
     font-family: sans-serif;
     margin-right: 10px;
     font-size: 35px;
-}
+} */
 
 
 /* .card_shadow {

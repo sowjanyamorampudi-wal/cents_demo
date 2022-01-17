@@ -37,6 +37,8 @@
     font: 20px bold;
 }
 
+
+/* 
 .Nav_container {
     display: flex;
     flex-direction: row;
@@ -45,7 +47,7 @@
     padding-right: 10px;
     align-items: center;
     height: 60px;
-}
+} */
 
 .right_container {
     display: flex;
@@ -92,4 +94,9 @@
 
 a {
     text-decoration: none;
+}
+
+h1 {
+    color: #3790f4;
+    margin-right: 20px;
 }

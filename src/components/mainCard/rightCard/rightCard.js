@@ -1,4 +1,5 @@
-import "./rightCard.css";
+// import "./rightCard.css";
+import "./rightCard.scss";
 const RightCard = () => {
   return (
     <>
@@ -8,7 +9,7 @@ const RightCard = () => {
           <hr />
 
           <div>
-            <ul className="list_items">
+            <ul>
               <p>Key Details</p>
               <li>Sales</li>
               <li>Processing</li>
@@ -18,7 +19,7 @@ const RightCard = () => {
           <hr />
         </div>
         <div className="right_card_scroll_bar">
-          <div className="right_card_direction">
+          <div>
             <h3>Key Details</h3>
             <h5>customer</h5>
             <p>Apoorava Marathe</p>
@@ -26,7 +27,7 @@ const RightCard = () => {
             <p>apoorva.m@westagilelabs.com</p>
           </div>
           <hr />
-          <div className="right_card_direction">
+          <div>
             <h5>SALES</h5>
             <h3>customer</h3>
             <p>Apoorava Marathe</p>
@@ -44,7 +45,7 @@ const RightCard = () => {
             </p>
           </div>
           <hr />
-          <div className="right_card_direction">
+          <div>
             <h5>WF-1854</h5>
 
             <p>Apoorva Marathe</p>
@@ -52,7 +53,7 @@ const RightCard = () => {
             <h5>EST Test 2241 southern</h5>
           </div>
           <hr />
-          <div className="right_card_direction">
+          <div>
             <h5>WF-1854</h5>
 
             <p>Apoorva Marathe</p>
@@ -60,7 +61,7 @@ const RightCard = () => {
             <h5>EST Test 2241 southern</h5>
           </div>
           <hr />
-          <div className="right_card_direction">
+          <div>
             <h5>WF-1854</h5>
 
             <p>Apoorva Marathe</p>
@@ -68,7 +69,7 @@ const RightCard = () => {
             <h5>EST Test 2241 southern</h5>
           </div>
           <hr />
-          <div className="right_card_direction">
+          <div>
             <h5>WF-1854</h5>
 
             <p>Apoorva Marathe</p>
