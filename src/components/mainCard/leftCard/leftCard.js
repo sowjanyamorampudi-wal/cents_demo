@@ -1,6 +1,4 @@
 import { FiDownload } from "react-icons/fi";
-// import "./leftCard.css";
-import "./leftCard.scss";
 const LeftCard = () => {
   return (
     <>

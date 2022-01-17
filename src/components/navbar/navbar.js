@@ -4,8 +4,6 @@ import { CgProfile } from "react-icons/cg";
 import { AiOutlineDoubleRight } from "react-icons/ai";
 import { CgDisplayGrid } from "react-icons/cg";
 import { HiOutlineLocationMarker } from "react-icons/hi";
-// import "./navbar.css";
-import "./navbar.scss";
 const NavbarTop = () => {
   return (
     <nav className="Nav_container">

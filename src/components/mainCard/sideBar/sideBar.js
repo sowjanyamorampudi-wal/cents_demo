@@ -1,10 +1,8 @@
-// import "./sideBar.css";
 import { BsCart2 } from "react-icons/bs";
 import { BsPeople } from "react-icons/bs";
 import { GiWashingMachine } from "react-icons/gi";
 import { VscReport } from "react-icons/vsc";
 import { Link } from "react-router-dom";
-import "./sideBar.scss";
 const Sidebar = () => {
   return (
     <>

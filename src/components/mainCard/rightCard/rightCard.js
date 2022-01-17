@@ -1,5 +1,3 @@
-// import "./rightCard.css";
-import "./rightCard.scss";
 const RightCard = () => {
   return (
     <>

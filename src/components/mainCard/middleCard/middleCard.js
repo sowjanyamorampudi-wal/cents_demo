@@ -1,5 +1,3 @@
-import "./middleCard.css";
-import "./middleCard.scss";
 const MiddleCard = () => {
   return (
     <>
