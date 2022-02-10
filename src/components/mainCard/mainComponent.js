@@ -20,7 +20,6 @@ const MainComponent = () => {
             <Route path="/dashboard/customers" element={<Customers />} />
             <Route path="/dashboard/machine" element={<Machine />} />
             <Route path="/dashboard/reports" element={<Reports />} />
-            <Route path="*" element={<MainComponentTwo />} />
           </Routes>
         </BrowserRouter>
       </div>
