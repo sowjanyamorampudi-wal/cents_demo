@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const Sidebar = () => {
   return (
     <>
-      <div className="side_bar_container">
+      <div className="laundromats_side_bar_container">
         <Link to="/dashboard/orders">
           <p>
             <BsCart2 /> Orders
