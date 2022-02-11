@@ -8,9 +8,14 @@ import { createStore } from "redux";
 
 const store = createStore(() => ({
   details: {
-    name: "robin",
-    company: "somthing.....",
-    address: "purva",
+    name: "ishaan GUlati",
+    company: "westagile labs hyderabad",
+    address: "purva..",
+    city: "Hyderabad",
+    state: "Telangana",
+    zip: "9421",
+    phone: "9989786543",
+    email: "ishaan@westagilelabs.com",
   },
 }));
 

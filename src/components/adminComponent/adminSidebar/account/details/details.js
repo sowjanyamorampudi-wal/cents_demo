@@ -14,7 +14,7 @@ const Details = () => {
           </div>
         </div>
         <div className="details_align">
-          <label>com name</label>
+          <label>company name</label>
           <br />
           <input type="text" value={details.company} />
         </div>
@@ -29,24 +29,24 @@ const Details = () => {
         <div className="details_align">
           <label>city</label>
           <br />
-          <input type="text" value="sathupally" />
+          <input type="text" value={details.city} />
         </div>
         <div className="details_align">
           <label>state</label>
           <br />
-          <input type="text" value="telangana" />
+          <input type="text" value={details.state} />
         </div>
         <div className="details_align">
           <label>zip</label>
           <br />
-          <input type="text" value="507164" />
+          <input type="text" value={details.zip} />
         </div>
         <div className="details_container">
           <BsPeople className="details_images" />
           <div>
             <label>phone num</label>
             <br />
-            <input type="text" label="name" value="8688257325" />
+            <input type="text" label="name" value={details.phone} />
           </div>
         </div>
         <div className="details_container">
@@ -54,7 +54,7 @@ const Details = () => {
           <div>
             <label>email</label>
             <br />
-            <input type="text" label="name" value="sowji@gmail.com" />
+            <input type="text" label="name" value={details.email} />
           </div>
         </div>
       </div>
