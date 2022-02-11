@@ -2,7 +2,7 @@ import { BsCart2 } from "react-icons/bs";
 import { BsPeople } from "react-icons/bs";
 import { GiWashingMachine } from "react-icons/gi";
 import { VscReport } from "react-icons/vsc";
-import { BrowserRouter, Link, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Link, Routes, Route, Outlet } from "react-router-dom";
 import MainComponent from "../../mainCard/mainComponent";
 import AccountSidebar from "./account/accountSidebar/accountSidebar";
 const AdminSidebar = () => {
@@ -57,7 +57,7 @@ const AdminSidebar = () => {
         </Link>
 
         <div>
-          <Link to="/account">
+          <Link to="account">
             <div className="side-bar-items">
               <p>
                 <VscReport /> account
@@ -66,10 +66,8 @@ const AdminSidebar = () => {
           </Link>
         </div>
       </div>
-      <div></div>
       <div>
-        <AccountSidebar />
-        <h1>helllllllllll</h1>
+        <Outlet />
       </div>
     </div>
   );
