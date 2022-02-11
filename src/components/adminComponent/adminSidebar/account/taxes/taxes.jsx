@@ -1,7 +1,12 @@
+import { VscReport } from "react-icons/vsc";
+
 const Taxes = () => {
   return (
     <div>
-      <h1>Teaxes component</h1>
+      <div className="tax-head-container">
+        <VscReport />
+        <h2>Tax Rates</h2>
+      </div>
     </div>
   );
 };

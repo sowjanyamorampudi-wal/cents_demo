@@ -1,0 +1,20 @@
+.regions-head-container {
+    display: flex;
+    align-items: center;
+}
+
+.region-item {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 15px 15px;
+    width: 300px;
+    border: 1px solid transparent;
+    transition: all 0ms;
+    position: relative;
+    .region-name {
+        margin-bottom: 10px;
+    }
+    .districts {
+        padding-left: 15px;
+    }
+}

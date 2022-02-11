@@ -17,6 +17,17 @@ const store = createStore(() => ({
     phone: "9989786543",
     email: "ishaan@westagilelabs.com",
   },
+  payments: {
+    title: "connected account",
+    details: "Stripe test bank ****11111",
+  },
+  // regions: ["Berkeley", "New york", "Test region", "Virginia"],
+  // districts: ["Hearst avenue", "New york", "Test dist", "Washington"],
+  regions: [
+    { region: "Berkeley", district: "Hearst avenue" },
+    { region: "New york", district: "New york" },
+    { region: "Berkeley", district: "Hearst avenue......." },
+  ],
 }));
 
 ReactDOM.render(
