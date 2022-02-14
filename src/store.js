@@ -29,9 +29,10 @@ const Store = createStore(() => ({
         { name: "berkeley", rate: "0", agency: "agens" },
     ],
     preferences: {
-        title: "customer preferences",
-        details: "Enable customers to set custom care preferences based on options you provide",
+        section1: ["Wash Temperature", "cold", "warm", "hot"],
+        section2: ["Bleach for whites", "yes", "no"],
     },
+
     settings: {},
 }));
 export default Store;

@@ -51,6 +51,35 @@ const Settings = () => {
       <p className="bag-note">tag</p>
       <p className="bag-note">new tag</p>
       <p className="bag-note">for check tag</p>
+      <div className="settings-container-col">
+        <big>Terms of Service</big>
+        <small>
+          Your customer receives a text message when their order has been
+          created, we will include a link to view your terms of service. Please
+          set which terms we should use.
+        </small>
+        <p>
+          Use the
+          <span>
+            <a href="#">Cents Standard terms of service</a>
+          </span>
+        </p>
+        <p>Link to my own terms of service</p>
+        <big>Receipt Customization</big>
+        <small>
+          Customize the memo that appears in the footer of the receipt that
+          prints out when an order has been paid for.
+        </small>
+        <h5>In Store Tipping</h5>
+        <small>
+          Give your customers the opportunity to add a tip to their full service
+          laundry order
+        </small>
+        <h5>Service Fee</h5>
+        <small>Charge customers a service fee on every POS sale</small>
+        <h3>Hub Settings</h3>
+        <small>Bag tracking</small>
+      </div>
     </div>
   );
 };
