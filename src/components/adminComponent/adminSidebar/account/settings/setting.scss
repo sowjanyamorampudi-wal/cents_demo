@@ -1,0 +1,52 @@
+.settings-over {
+    overflow-y: scroll;
+    height: 500px;
+    .settings-container-row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 0px;
+    }
+    .settings-container-col {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+    .settings-image {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .plus-icon {
+        background-color: blue;
+        border-radius: 50px;
+        margin-left: 20px;
+        border: 0px;
+        color: white;
+        padding: 10px;
+    }
+    .bag-note {
+        display: inline;
+        margin: 10px 4px;
+        padding: 4px 12px;
+        border: 1px solid #b1b1b1;
+        border-radius: 16px;
+        font-size: 14px;
+        cursor: default;
+    }
+    .toggle-image {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .color-image {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+        margin-left: 10px;
+        color: blue;
+    }
+}

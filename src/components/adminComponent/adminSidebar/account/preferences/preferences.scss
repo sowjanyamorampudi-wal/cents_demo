@@ -1,0 +1,16 @@
+.preferences-container-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0px;
+    .preferences-container-col {
+        display: flex;
+        flex-direction: column;
+    }
+    .preferences-image {
+        width: 30px;
+        height: 130px;
+        margin-right: 10px;
+        margin-right: 10px;
+    }
+}

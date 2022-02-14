@@ -1,4 +1,13 @@
-.tax-head-container {
-    display: flex;
-    align-items: center;
+.taxes-align {
+    overflow-y: scroll;
+    height: 500px;
+    .tax-head-container {
+        display: flex;
+        align-items: center;
+    }
+    // .region-item {
+    //     display: flex;
+    //     flex-direction: column;
+    //     justify-content: center;
+    // }
 }
