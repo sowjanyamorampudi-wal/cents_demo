@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, IndexRoute } from "react-router-dom";
 import "./App.css";
 import "./global.scss";
 import MainComponent from "./components/mainCard/mainComponent";
@@ -27,6 +27,8 @@ function App() {
             <Route exact path="/admin" element={<AdminSidebar />}>
               <Route path="account" element={<AccountSidebar />}>
                 <Route path="details" element={<Details />} />
+
+                <Route index element={<Details />} />
                 <Route path="payments" element={<Payment />} />
                 <Route path="preferences" element={<Preferences />} />
                 <Route path="regions" element={<Regions />} />
