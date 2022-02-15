@@ -1,8 +1,11 @@
 import { BsPeople, BsToggle2Off } from "react-icons/bs";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
+import { showPreferences } from "../../../../../redux/preferences/preferencesActions";
 const Preferences = () => {
   const preferences = useSelector((state) => state.preferences);
-  const { section1, section2 } = preferences;
+  console.log("...........", preferences);
+  const { section1, section2, isShown } = preferences;
+  const dispatch = useDispatch();
   return (
     <div>
       <div className="preference-container">
@@ -16,24 +19,33 @@ const Preferences = () => {
               you provide
             </small>
           </div>
-          <BsToggle2Off className="preferences-image" />
+          <BsToggle2Off
+            className="preferences-image"
+            onClick={(e) => dispatch(showPreferences(!isShown))}
+          />
         </div>
         <big>
           Which options would you like to offer to your customers when setting
           their custom preferences?
         </big>
-        {section1.map((item) => (
-          <div className="preferences-container-row">
-            <p>{item}</p>
-            <p>x</p>
-          </div>
-        ))}
-        {section2.map((item) => (
-          <div className="preferences-container-row">
-            <p>{item}</p>
-            <p>x</p>
-          </div>
-        ))}
+
+        {isShown && (
+          <>
+            {section1.map((item) => (
+              <div className="preferences-container-row">
+                <p>{item}</p>
+                <p>x</p>
+              </div>
+            ))}
+
+            {section2.map((item) => (
+              <div className="preferences-container-row">
+                <p>{item}</p>
+                <p>x</p>
+              </div>
+            ))}
+          </>
+        )}
       </div>
     </div>
   );

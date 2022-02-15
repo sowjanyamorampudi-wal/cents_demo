@@ -1,38 +1,5 @@
 import { createStore } from "redux";
+import rootReducer from "./redux/rootReducer";
+const Store = createStore(rootReducer);
 
-const Store = createStore(() => ({
-    details: {
-        name: "sowjanya",
-        company: "westagile labs hyderabad",
-        address: "purva..",
-        city: "Hyderabad",
-        state: "Telangana",
-        zip: "9421",
-        phone: "9989786543",
-        email: "sowjanya@westagilelabs.com",
-    },
-    // payments: {
-    //     title: "connected account",
-    //     details: "Stripe test bank ****11111",
-    // },
-    // regions: ["Berkeley", "New york", "Test region", "Virginia"],
-    // districts: ["Hearst avenue", "New york", "Test dist", "Washington"],
-    regions: [
-        { region: "Berkeley", district: "Hearst avenue" },
-        { region: "New york", district: "New york" },
-        { region: "Berkeley", district: "Hearst avenue......." },
-    ],
-    taxes: [
-        { name: "abb", rate: "2", agency: "abb" },
-        { name: "abbb", rate: "12.7", agency: "abbb" },
-        { name: "Arizona", rate: "2.45", agency: "Arizona Tax Agency" },
-        { name: "berkeley", rate: "0", agency: "agens" },
-    ],
-    preferences: {
-        section1: ["Wash Temperature", "cold", "warm", "hot"],
-        section2: ["Bleach for whites", "yes", "no"],
-    },
-
-    settings: {},
-}));
 export default Store;
