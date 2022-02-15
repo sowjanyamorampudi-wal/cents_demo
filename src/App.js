@@ -12,28 +12,32 @@ import Preferences from "./components/adminComponent/adminSidebar/account/prefer
 import Regions from "./components/adminComponent/adminSidebar/account/regions/regions";
 import Taxes from "./components/adminComponent/adminSidebar/account/taxes/taxes";
 import Settings from "./components/adminComponent/adminSidebar/account/settings/settings";
+import { Provider } from "react-redux";
+import Store from "./store";
 
 function App() {
   // con hiiiiii
   return (
     <div>
-      <BrowserRouter>
-        <NavbarTop />
+      <Provider store={Store}>
+        <BrowserRouter>
+          <NavbarTop />
 
-        <Routes>
-          <Route exact path="/admin" element={<AdminSidebar />}>
-            <Route path="account" element={<AccountSidebar />}>
-              <Route path="details" element={<Details />} />
-              <Route path="payments" element={<Payment />} />
-              <Route path="preferences" element={<Preferences />} />
-              <Route path="regions" element={<Regions />} />
-              <Route path="taxes" element={<Taxes />} />
-              <Route path="settings" element={<Settings />} />
+          <Routes>
+            <Route exact path="/admin" element={<AdminSidebar />}>
+              <Route path="account" element={<AccountSidebar />}>
+                <Route path="details" element={<Details />} />
+                <Route path="payments" element={<Payment />} />
+                <Route path="preferences" element={<Preferences />} />
+                <Route path="regions" element={<Regions />} />
+                <Route path="taxes" element={<Taxes />} />
+                <Route path="settings" element={<Settings />} />
+              </Route>
             </Route>
-          </Route>
-          <Route path="/main" element={<MainComponentTwo />} />
-        </Routes>
-      </BrowserRouter>
+            <Route path="/main" element={<MainComponentTwo />} />
+          </Routes>
+        </BrowserRouter>
+      </Provider>
     </div>
   );
 }

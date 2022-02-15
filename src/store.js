@@ -2,14 +2,14 @@ import { createStore } from "redux";
 
 const Store = createStore(() => ({
     details: {
-        name: "ishaan GUlati",
+        name: "sowjanya",
         company: "westagile labs hyderabad",
         address: "purva..",
         city: "Hyderabad",
         state: "Telangana",
         zip: "9421",
         phone: "9989786543",
-        email: "ishaan@westagilelabs.com",
+        email: "sowjanya@westagilelabs.com",
     },
     // payments: {
     //     title: "connected account",
