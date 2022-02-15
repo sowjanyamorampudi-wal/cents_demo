@@ -1,17 +1,15 @@
 import { VscReport } from "react-icons/vsc";
-import { useSelector } from "react-redux";
 
 const Payment = () => {
-  const payments = useSelector((state) => state.payments);
   return (
     <div>
       <div className="connected-account-title">
         <VscReport />
-        <h2>{payments.title}</h2>
+        <h2>connected account</h2>
       </div>
       <div className="connected-account-title connected-account-details">
         <VscReport />
-        <p>{payments.details}</p>
+        <p>Stripe test bank ****11111</p>
       </div>
     </div>
   );
