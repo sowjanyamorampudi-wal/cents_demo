@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, IndexRoute } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 import "./global.scss";
 import MainComponent from "./components/mainCard/mainComponent";
@@ -14,6 +14,10 @@ import Taxes from "./components/adminComponent/adminSidebar/account/taxes/taxes"
 import Settings from "./components/adminComponent/adminSidebar/account/settings/settings";
 import { Provider } from "react-redux";
 import Store from "./store";
+import Customers from "./laundromatsComponents/customers";
+import Machine from "./laundromatsComponents/machine";
+import Reports from "./laundromatsComponents/reports";
+import Sidebar from "./components/mainCard/sideBar/sideBar";
 
 function App() {
   // con hiiiiii
@@ -24,6 +28,15 @@ function App() {
           <NavbarTop />
 
           <Routes>
+            <Route index element={<MainComponentTwo />} />
+            <Route path="/laundromats" element={<Sidebar />}>
+              <Route index element={<MainComponent />} />
+              <Route path="orders" element={<MainComponent />} />
+              <Route path="customers" element={<Customers />} />
+              <Route path="machine" element={<Machine />} />
+              <Route path="reports" element={<Reports />} />
+            </Route>
+
             <Route exact path="/admin" element={<AdminSidebar />}>
               <Route path="account" element={<AccountSidebar />}>
                 <Route path="details" element={<Details />} />
@@ -36,7 +49,6 @@ function App() {
                 <Route path="settings" element={<Settings />} />
               </Route>
             </Route>
-            <Route path="/main" element={<MainComponentTwo />} />
           </Routes>
         </BrowserRouter>
       </Provider>
