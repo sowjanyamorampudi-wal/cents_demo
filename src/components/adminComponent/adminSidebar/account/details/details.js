@@ -14,6 +14,7 @@ const Details = () => {
           <BsPeople className="details_images" />
           <div>
             <label>Name</label>
+
             <br />
             <input
               type="text"

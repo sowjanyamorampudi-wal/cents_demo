@@ -1,11 +1,17 @@
-import { useState } from "react";
 import { BsPeople, BsToggle2Off } from "react-icons/bs";
+import { useSelector, useDispatch } from "react-redux";
+import { showSettings } from "../../../../../redux/settings/settingsActions";
 
 const Settings = () => {
-  const [toggle, setToggle] = useState(false);
-  const toggleHandler = () => {
-    setToggle(!toggle);
-  };
+  const requiredEmployeeCode = useSelector(
+    (state) => state.settings.requireemployeecode
+  );
+  const recordRackNumber = useSelector(
+    (state) => state.settings.recordracknumber
+  );
+  console.log("re..", requiredEmployeeCode);
+
+  const dispatch = useDispatch();
   return (
     <div className="settings-over">
       <div className="settings-container-row">
@@ -15,7 +21,12 @@ const Settings = () => {
           <big>In-Store Team Management</big>
           <small>Require employee code on actions</small>
         </div>
-        <BsToggle2Off className="toggle-image" />
+        <BsToggle2Off
+          className={requiredEmployeeCode ? "toggle-image-on" : "toggle-image"}
+          onClick={(e) =>
+            dispatch(showSettings("requireemployeecode", !requiredEmployeeCode))
+          }
+        />
       </div>
       <div className="settings-container-row">
         <BsPeople className="settings-image" />
@@ -23,18 +34,21 @@ const Settings = () => {
       </div>
       <h2>Weight Tracking</h2>
       <p>When would you like the order to be weighted?</p>
+      <input type="checkbox" />
       <p>Weigh 1: During intake (sales weight)</p>
       <p>Weigh 2: Before processing</p>
       <p>Weigh 3: After processing</p>
       <p>Weigh 3: After processing</p>
       <div className="settings-container-row">
         <div className="settings-container-col">
-          <big>In-Store Team Management</big>
-          <small>Require employee code on actions</small>
+          <big>Storage Tracking</big>
+          <small>Record rack number after intake and after processing</small>
         </div>
         <BsToggle2Off
-          className={toggle ? "color-image" : "toggle-image"}
-          onClick={toggleHandler}
+          className={recordRackNumber ? "toggle-image-on" : "toggle-image"}
+          onClick={(e) =>
+            dispatch(showSettings("recordracknumber", !recordRackNumber))
+          }
         />
       </div>
       <div className="settings-container-col">

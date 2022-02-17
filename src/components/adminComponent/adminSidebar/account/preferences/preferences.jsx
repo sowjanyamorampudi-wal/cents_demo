@@ -20,7 +20,7 @@ const Preferences = () => {
             </small>
           </div>
           <BsToggle2Off
-            className="preferences-image"
+            className={isShown ? "preferences-image" : "preferences-image-on"}
             onClick={(e) => dispatch(showPreferences(!isShown))}
           />
         </div>
